@@ -1,0 +1,12 @@
+$TTL	604800
+@       IN      SOA     $HOSTNAME.$FQDN. admin.$FQDN. (
+                              3         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+; name servers - NS records
+      IN      NS      $HOSTNAME.$FQDN.
+
+; PTR Records
+$REVERSED_HOST_BITS	IN	PTR	$HOSTNAME.$FQDN.	; $IP_ADDR

@@ -1,0 +1,17 @@
+$TTL	604800 
+@       IN      SOA     $HOSTNAME.$FQDN. admin.$FQDN. (
+                              3         ; Serial
+             604800     ; Refresh
+              86400     ; Retry
+            2419200     ; Expire
+             604800 )   ; Negative Cache TTL
+;
+; name servers - NS records
+    IN      NS      $HOSTNAME.$FQDN.
+
+; name servers - A records
+$HOSTNAME.$FQDN.          IN      A       $IP_ADDR/$IP_SUBNET
+
+; hosts - A records
+;\/ Example of a host record \/
+;www.stomovich.group9.net.	IN	A	192.168.20.1

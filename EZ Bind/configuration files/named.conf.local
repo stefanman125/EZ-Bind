@@ -1,0 +1,9 @@
+zone "$FQDN" {
+	type master;
+	file "/etc/named/zones/db.$FQDN"; # zone file path
+};
+
+zone "$REVERSE_IP.in-addr.arpa" {
+    type master;
+    file "/etc/named/zones/db.$SUBNET_IP";  # Includes that subnet
+};
