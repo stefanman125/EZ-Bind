@@ -10,8 +10,9 @@ $TTL	604800
     IN      NS      $HOSTNAME.$FQDN.
 
 ; name servers - A records
-$HOSTNAME.$FQDN.          IN      A       $IP_ADDR/$IP_SUBNET
+$HOSTNAME.$FQDN.          IN      A       $IP_ADDR
 
 ; hosts - A records
 ;\/ Example of a host record \/
 ;www.stomovich.group9.net.	IN	A	192.168.20.1
+
